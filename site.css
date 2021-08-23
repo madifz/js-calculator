@@ -111,7 +111,7 @@ html {
 
 body {
   align-items: center;
-  background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+  background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -176,7 +176,7 @@ body {
 }
 
 .key--equal {
-  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+  background-image: linear-gradient(to bottom, hsl(357, 0%, 52%), hsl(357, 50%, 52%));
   grid-column: -2;
   grid-row: 2 / span 4;
 }
