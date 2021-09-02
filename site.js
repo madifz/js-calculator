@@ -1,3 +1,7 @@
+let displayNumber = 0;
+let storedNumber = 0;
+document.getElementById("jsc_display").innerHTML = displayNumber;
+
 const add = function(a, b) {
     
     return a + b;  
@@ -39,30 +43,51 @@ keys.addEventListener('click', e => {
     const key = e.target;
     const action = key.dataset.action;
     
-    if (!action) {
-        console.log('number key!')
-    }
-    
-    if (
-        action === 'add' || 
-        action === 'subtract' ||
-        action === 'multiply' ||
-        action === 'divide'
-    ) {
-        console.log('operator key!');
-    }
-    
-    if (action === 'decimal') {
-        console.log('decimal key!');
-    }
-    
-    if (action === 'clear') {
-        console.log('clear key!');
-    }
-    
-    if (action === 'calculate') {
-        console.log('equal key!');
-    }
+    if (action === '1') {
+        displayNumber = 1;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '2') {
+        displayNumber = 2;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '3') {
+        displayNumber = 3;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '4') {
+        displayNumber = 4;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '5') {
+        displayNumber = 5;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '6') {
+        displayNumber = 6;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '7') {
+        displayNumber = 7;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '8') {
+        displayNumber = 8;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '9') {
+        displayNumber = 9;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === '0') {
+        displayNumber = 0;
+        document.getElementById("jsc_display").innerHTML = displayNumber;
+    } else if (action === 'add') {
+        
+    } else if (action === 'subtract') {
+        
+    } else if (action === 'multiply') {
+        
+    } else if (action === 'divide') {
+        
+    } else if (action === 'decimal') {
+        
+    } else if (action === 'clear') {
+        
+    } else if (action === 'calculate') {
+        
+    } 
  }
 })
 
